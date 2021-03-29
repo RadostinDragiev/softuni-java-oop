@@ -1,0 +1,15 @@
+package L05_Polymorphism_Exercise.P02VehiclesExtension;
+
+public class Car extends Vehicle {
+    public static final String CLAZZ = "Car";
+
+    public Car(double fuelQuantity, double fuelConsumption, double tankCapacity) {
+        super(fuelQuantity, fuelConsumption + 0.9, tankCapacity);
+    }
+
+    @Override
+    public void drive(Double kilometers) {
+        System.out.print(CLAZZ);
+        super.drive(kilometers);
+    }
+}
